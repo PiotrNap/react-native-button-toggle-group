@@ -1,67 +1,58 @@
 {
-  "name": "react-native-button-toggle-group",
-  "version": "1.1.1",
-  "description": "An animated button toggle group for string selection",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "eslint --fix ./*.{js,ts}",
-    "lint": "eslint ./*.{js,ts}",
-    "release": "standard-version"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/crutchcorn/react-native-button-toggle-group.git"
-  },
-  "author": "Corbin Crutchley <crutchcorn@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/crutchcorn/react-native-button-toggle-group/issues"
-  },
-  "homepage": "https://github.com/crutchcorn/react-native-button-toggle-group#readme",
-  "devDependencies": {
-    "@commitlint/cli": "^9.0.1",
-    "@commitlint/config-conventional": "^9.0.1",
-    "@typescript-eslint/eslint-plugin": "^3.3.0",
-    "@typescript-eslint/parser": "^3.3.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.19.0",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "prettier": "^2.0.4",
-    "react": "^16.9.0",
-    "standard-version": "^8.0.0",
-    "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "@react-native-community/masked-view": "^0.1.8",
-    "react-native-paper": "^3.8.0"
-  },
-  "keywords": [
-    "react-native",
-    "react native",
-    "button-toggle-group",
-    "button toggle group",
-    "material-design",
-    "material design"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "npm run format"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  }
+	"name": "react-native-button-toggle-group",
+	"version": "1.1.1",
+	"description": "An animated button toggle group for string selection",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "eslint --fix ./*.{js,ts}",
+		"lint": "eslint ./*.{js,ts}",
+		"release": "standard-version"
+	},
+	"repository": "git+https://github.com/crutchcorn/react-native-button-toggle-group.git",
+	"author": "Corbin Crutchley <crutchcorn@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/crutchcorn/react-native-button-toggle-group/issues"
+	},
+	"homepage": "https://github.com/crutchcorn/react-native-button-toggle-group#readme",
+	"devDependencies": {
+		"@commitlint/cli": "^9.0.1",
+		"@commitlint/config-conventional": "^9.0.1",
+		"@typescript-eslint/eslint-plugin": "^3.3.0",
+		"@typescript-eslint/parser": "^3.3.0",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.10.1",
+		"eslint-plugin-prettier": "^3.1.2",
+		"eslint-plugin-react": "^7.19.0",
+		"husky": "^4.2.5",
+		"lint-staged": "^10.2.11",
+		"prettier": "^2.0.4",
+		"react": "^16.9.0",
+		"standard-version": "^8.0.0",
+		"typescript": "^3.8.3"
+	},
+	"dependencies": {
+		"react-native-paper": "^3.8.0"
+	},
+	"keywords": [
+		"react-native",
+		"react native",
+		"button-toggle-group",
+		"button toggle group",
+		"material-design",
+		"material design"
+	],
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{ts,tsx,js,jsx}": ["npm run format"]
+	},
+	"commitlint": {
+		"extends": ["@commitlint/config-conventional"]
+	}
 }
